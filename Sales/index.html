@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<title>商城</title>
+		<!-- <link rel="stylesheet" type="text/css" href="css/1.css" /> -->
+		<style type="text/css">
+			.nav_all a,td,table {
+				text-decoration: none;
+				color: #000;
+				border: none;
+			}
+
+			.nav3 table tr td a {
+				font-size: 18px;
+				margin-left: 80px;
+			}
+
+			.nav_all {
+				border: dashed;
+				width: 100%;
+				height: 300px;
+			}
+
+			.nav1 {
+				height: 50px;
+			}
+
+			.nav_right {
+				position: relative;
+				left: 1400px;
+			}
+
+			.nav_left {
+				position: relative;
+			}
+
+			.nav2 {
+				/* border: double; */
+				width: 100%;
+				height: 150px;
+			}
+
+			.nav3 {
+				border: orangered solid;
+				width: 100%;
+				height: 100px;
+			}
+
+			.dropdown-toggle {
+				color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav_all">
+			<div class="nav1">
+				<div class="container-fluid">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="container-fluid">
+							<div>
+								<ul class="nav navbar-nav nav_right">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											账户
+											<b class="caret"></b>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">购物清单</a></li>
+											<li><a href="#">账户</a></li>
+											<li><a href="#">设置</a></li>
+											<li><a href="#">产品</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											人民币
+											<b class="caret"></b>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">jmeter</a></li>
+											<li><a href="#">EJB</a></li>
+											<li><a href="#">Jasper Report</a></li>
+											<li class="divider"></li>
+											<li><a href="#">分离的链接</a></li>
+											<li class="divider"></li>
+											<li><a href="#">另一个分离的链接</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											英文
+											<b class="caret"></b>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">jmeter</a></li>
+											<li><a href="#">EJB</a></li>
+											<li><a href="#">Jasper Report</a></li>
+											<li class="divider"></li>
+											<li><a href="#">分离的链接</a></li>
+											<li class="divider"></li>
+											<li><a href="#">另一个分离的链接</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+			</div>
+
+			<div class="nav2">
+				<div class="container-fluid">
+					<img src="img/logo.png" style="margin-left: 300px;">
+					<input type="text" name="input_text" id="input_text" value="" placeholder="在这里输入商品" 
+					style="width: 700px; height: 50px; outline: none; margin-left: 60px; margin-top: 55px;" />
+					<button type="button" style="background: #0000FF; position: relative; left: -60px; top: 5px;outline:none;">
+						<i class="fa fa-search" aria-hidden="true" style="width: 40px; height: 42px; font-size: 25px; color: #FFFFFF;padding-top: 10px;"></i>
+					</button>
+					<i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 35px; margin-left: 200px;">
+					<span style="font-size: 20px;">购物车</span></i>
+				</div>
+			</div>
+
+			<div class="nav3">
+				<div class="container-fluid">
+					<a href="javascript:0">
+						<div id="" style="display: inline-block; background-color: #2B71F7; color: #FFF; width: 300px; height: 60px; 
+										padding-left: 50px;padding-top: 20px;margin-left: 300px; position:relative; top :-25px;">
+							<i class="fa fa-bars" aria-hidden="true" style="font-size: 25px;padding-right: 10px;"></i>
+							<span style="font-size:20px;">主题市场</span>
+							<i class="fa fa-angle-down" style="font-size: 25px;padding-left: 90px;"></i>
+						</div>
+					</a>
+
+					<div style="display: inline-block; width: 580px; height: 70px; border: #0000FF 2px solid;margin-top: 20px; ">
+						<table border="" cellspacing="" cellpadding="" style="border: dashed; margin-top: 20px;">
+							<tr>
+								<td>
+									<a href="">
+										<span>主页</span>
+										<i class="fa fa-angle-down"></i>
+									</a>
+								</td>
+								<td>
+									<a href="">
+										<span>超市</span>
+										<i class="fa fa-angle-down"></i>
+									</a>
+								</td>
+								<td>
+									<a href="">
+										<span>电器城</span>
+										<i class="fa fa-angle-down"></i>
+									</a>
+								</td>
+								<td>
+									<a href="">
+										<span>联系我们</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
