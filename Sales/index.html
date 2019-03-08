@@ -59,8 +59,38 @@
 				height: 100px;
 			}
 
-			.dropdown-toggle {
-				color: #000;
+			.drop-down-content {
+				padding: 0;
+				display: none;
+				/*position: absolute;*/
+			}
+
+			.drop-down-content li:hover a {
+				background-color: red;
+			}
+
+			.nav .drop-down:hover .drop-down-content {
+				display: block;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			.ul>li {
+				float: left;
+			}
+
+			ul a {
+				float: left;
+				display: block;
+				text-decoration: none;
+				width: 100px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+				background-color: #F8F8F8;
 			}
 		</style>
 	</head>
@@ -72,46 +102,27 @@
 						<div class="container-fluid">
 							<div>
 								<ul class="nav navbar-nav nav_right">
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-											账户
-											<b class="caret"></b>
-										</a>
-										<ul class="dropdown-menu">
-											<li><a href="#">购物清单</a></li>
-											<li><a href="#">账户</a></li>
-											<li><a href="#">设置</a></li>
-											<li><a href="#">产品</a></li>
+									<li class="drop-down"><a href="#">账户</a>
+										<ul class="drop-down-content">
+											<li><a href="#">我是1</a></li>
+											<li><a href="#">我是2</a></li>
+											<li><a href="#">我是3</a></li>
 										</ul>
 									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-											人民币
-											<b class="caret"></b>
-										</a>
-										<ul class="dropdown-menu">
-											<li><a href="#">jmeter</a></li>
-											<li><a href="#">EJB</a></li>
-											<li><a href="#">Jasper Report</a></li>
-											<li class="divider"></li>
-											<li><a href="#">分离的链接</a></li>
-											<li class="divider"></li>
-											<li><a href="#">另一个分离的链接</a></li>
+
+									<li class="drop-down"><a href="#">人民币</a>
+										<ul class="drop-down-content">
+											<li><a href="#">我是1</a></li>
+											<li><a href="#">我是2</a></li>
+											<li><a href="#">我是3</a></li>
 										</ul>
 									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-											英文
-											<b class="caret"></b>
-										</a>
-										<ul class="dropdown-menu">
-											<li><a href="#">jmeter</a></li>
-											<li><a href="#">EJB</a></li>
-											<li><a href="#">Jasper Report</a></li>
-											<li class="divider"></li>
-											<li><a href="#">分离的链接</a></li>
-											<li class="divider"></li>
-											<li><a href="#">另一个分离的链接</a></li>
+
+									<li class="drop-down"><a href="#">英文</a>
+										<ul class="drop-down-content">
+											<li><a href="#">我是1</a></li>
+											<li><a href="#">我是2</a></li>
+											<li><a href="#">我是3</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -181,4 +192,3 @@
 
 	</body>
 </html>
-
