@@ -12,6 +12,7 @@
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="js/jone.js"></script>
 		<title>商城</title>
 		<!-- <link rel="stylesheet" type="text/css" href="css/1.css" /> -->
 		<style type="text/css">
@@ -59,39 +60,6 @@
 				height: 100px;
 			}
 			
-			ul {
-				list-style: none;
-			}
-			
-			.drop-down-content {
-				padding: 0;
-				display: none;
-			}
-
-			.drop-down-content li:hover a {
-				background-color: red;
-			}
-
-			.nav .drop-down:hover .drop-down-content {
-				display: block;
-			}
-
-			.ul>li {
-				float: left;
-			}
-
-			ul a {
-				position: absolute;
-				display: block;
-				text-decoration: none;
-				width: 100px;
-				height: 50px;
-				text-align: center;
-				line-height: 50px;
-				color: white;
-				background-color: #F8F8F8;
-			}
-			
 			.circle{
 				position: relative;
 				float: right;
@@ -105,6 +73,47 @@
 				right: 85px;
 				top: -15px;
 			}
+			ul{
+				list-style: none;
+			}
+			.drop-down-content{
+				display: none;
+			}
+			.drop-down:hover .drop-down-content{
+				display: block;
+			}
+			.drop-down-content li:hover a{
+				background-color: red;
+			}
+			.nav .drop-down:hover .drop-down-content {
+				display: block;
+			}
+			.a_style1{
+				top:50px;
+			}
+			.a_style2{
+				top:100px;
+			}
+			.a_style3{
+				top:150px;
+			}
+			.drop-down-content {
+				padding: 0;
+				display: none;
+			}
+			ul a {
+				position: absolute;
+				display: block;
+				text-decoration: none;
+				width: 100px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+				background-color: #F8F8F8;
+			}
+
+			
 		</style>
 	</head>
 	<body>
@@ -117,25 +126,25 @@
 								<ul class="nav navbar-nav nav_right">
 									<li class="drop-down"><a href="#">账户<i class="fa fa-angle-down" style="font-size: 20px;padding-left: 5px;"></i></a>
 										<ul class="drop-down-content">
-											<li><a href="#">我是1</a></li>
-											<li><a href="#">我是2</a></li>
-											<li><a href="#">我是3</a></li>
+											<li><a class="a_style1" href="#">我是1</a></li>
+											<li><a class="a_style2" href="#">我是2</a></li>
+											<li><a class="a_style3" href="#">我是3</a></li>
 										</ul>
 									</li>
 
 									<li class="drop-down"><a href="#">人民币<i class="fa fa-angle-down" style="font-size: 20px;padding-left: 5px;"></i></a>
 										<ul class="drop-down-content">
-											<li><a href="#">我是1</a></li>
-											<li><a href="#">我是2</a></li>
-											<li><a href="#">我是3</a></li>
+											<li><a class="a_style1" href="#">我是1</a></li>
+											<li><a class="a_style2" href="#">我是2</a></li>
+											<li><a class="a_style3" href="#">我是3</a></li>
 										</ul>
 									</li>
 
 									<li class="drop-down"><a href="#">英文<i class="fa fa-angle-down" style="font-size: 20px;padding-left: 5px;"></i></a>
 										<ul class="drop-down-content">
-											<li><a href="#">我是1</a></li>
-											<li><a href="#">我是2</a></li>
-											<li><a href="#">我是3</a></li>
+											<li><a class="a_style1" href="#">我是1</a></li>
+											<li><a class="a_style2" href="#">我是2</a></li>
+											<li><a class="a_style3" href="#">我是3</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -168,6 +177,7 @@
 							<i class="fa fa-bars" aria-hidden="true" style="font-size: 25px;padding-right: 10px;"></i>
 							<span style="font-size:20px;">主题市场</span>
 							<i class="fa fa-angle-down" style="font-size: 25px;padding-left: 90px;"></i>
+							
 						</div>
 					</a>
 
@@ -203,6 +213,11 @@
 
 				</div>
 			</div>
+			
+			
+			
+			
+			
 		</div>
 
 	</body>
