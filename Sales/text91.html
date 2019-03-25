@@ -1,48 +1,163 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
 		<title></title>
 		<style type="text/css">
-			
+			* {
+				margin: 0;
+				padding: 0;
+				background: silver;
+			}
+
+			/*初始化页面*/
+			.CarouselBox {
+				width: 800px;
+				height: 600px;
+				margin: 100px auto;
+				overflow: hidden;
+			}
+
+			/*设置放置轮播图的盒子*/
+			li {
+				width: 800px;
+				height: 600px;
+				float: left;
+				list-style: none;
+			}
+
+			/*对放置图片的li进行设置*/
+
+			/*设置动画的主要属性*/
+			ul {
+				width: 4800px;
+				height: 600px;
+				animation: myani 10s 0s alternate ease-in-out infinite;
+				-ms-animation: myani 10s 0s alternate ease-in-out infinite;
+				-moz-animation: myani 10s 0s alternate ease-in-out infinite;
+				-webkit-animation: myani 10s 0s alternate ease-in-out infinite;
+
+			}
+
+
+
+			/* 对动画的关键帧进行设置*/
+			@keyframes myani {
+				0% {
+					margin-left: 0px;
+				}
+
+				20% {
+					margin-left: -800px;
+				}
+
+				40% {
+					margin-left: -1600px;
+				}
+
+				60% {
+					margin-left: -2400px;
+				}
+
+				80% {
+					margin-left: -3200px;
+				}
+
+				100% {
+					margin-left: -4000px;
+				}
+			}
+
+			/*对动画的关键帧进行兼容处理*/
+			@-webkit-keyframes myani {
+				0% {
+					margin-left: 0px;
+				}
+
+				20% {
+					margin-left: -800px;
+				}
+
+				40% {
+					margin-left: -1600px;
+				}
+
+				60% {
+					margin-left: -2400px;
+				}
+
+				80% {
+					margin-left: -3200px;
+				}
+
+				100% {
+					margin-left: -4000px;
+				}
+			}
+
+			@-moz-keyframes myani {
+				0% {
+					margin-left: 0px;
+				}
+
+				20% {
+					margin-left: -800px;
+				}
+
+				40% {
+					margin-left: -1600px;
+				}
+
+				60% {
+					margin-left: -2400px;
+				}
+
+				80% {
+					margin-left: -3200px;
+				}
+
+				100% {
+					margin-left: -4000px;
+				}
+			}
+
+			@-ms-keyframes myani {
+				0% {
+					margin-left: 0px;
+				}
+
+				20% {
+					margin-left: -800px;
+				}
+
+				40% {
+					margin-left: -1600px;
+				}
+
+				60% {
+					margin-left: -2400px;
+				}
+
+				80% {
+					margin-left: -3200px;
+				}
+
+				100% {
+					margin-left: -4000px;
+				}
+			}
 		</style>
 	</head>
 	<body>
-		<div class="head-bottom">
-			<div class="container">
-				<div class="row">
-					<div id="col-lg-3">
-						<div class="categories-title">
-							<h2><i class="fa fa-list"></i>主题市场<i class="fa fa-angle-down"></i></h2>
-						</div>
-						<div class="category-menu-inner">
-							<ui>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-								<li><a href="">女装&男装&内衣<i class="fa fa-angle-right"></i></a></li>
-							</ui>
-						</div>
-					</div>
-					<div class="col-lg-7">
-						<div class="main-menu">
-							<ul>
-								<li><a href="">主页<i class="fa fa-angle-down"></i></a></li>
-								<li><a href="">主页<i class="fa fa-angle-down"></i></a></li>
-								<li><a href="">主页<i class="fa fa-angle-down"></i></a></li>
-								<li><a href="">主页<i class="fa fa-angle-down"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-			</div>
+		<div class="CarouselBox">
+			<ul>
+				<li> <a href="##"><img src="img/slider1.jpg" width="800" height="600"></a> </li>
+				<li> <a href="##"><img src="img/slider2.jpg" width="800" height="600"></a> </li>
+				<li> <a href="##"><img src="img/avtar.png" width="800" height="600"></a> </li>
+				<li> <a href="##"><img src="img/banner1.png" width="800" height="600"></a> </li>
+				<li> <a href="##"><img src="img/banner2.png" width="800" height="600"></a> </li>
+				<li> <a href="##"><img src="img/banner4.png" width="800" height="600"></a> </li>
+			</ul>
 		</div>
 	</body>
 </html>
