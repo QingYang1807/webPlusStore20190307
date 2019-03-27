@@ -325,6 +325,25 @@ a:focus {
 	color: blue;
 }
 
+.head-bottom.stick{
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+	top: 0;
+	background-color: rgb(255,255,255,.9);
+	padding-top: 6px;
+	animation: fadeInDown .5s infinite;
+	animation-iteration-count: 1;/*出现效果不重复*/
+}
+@keyframes fadeInDown{
+	from{
+		top:-66px;
+	}
+	to{
+		top: 0;
+	}
+}
+
 .slider-area {
 	position: relative;
 	height: 500px;
