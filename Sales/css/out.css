@@ -147,6 +147,86 @@ a:focus {
 	font-weight: 700;
 }
 
+/*购物车列表mini-car*/
+.mini-car {
+	position: absolute;
+	width: 800px;
+	background: white;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	z-index: 999;
+	right: 0;
+	padding: 25px;
+	height: 360px;
+	transform-origin: 0 0 0;
+	transform: scaleY(1);
+	transition: .4s;
+}
+.mini-car .open{
+	transform: scaleY(1);
+}
+.mini-car table img{
+	width: 60px;
+}
+.mini-car table tr td:nth-child(n+1):nth-child(-n+3){
+	line-height: 4.5;
+}
+.mini-car table tr td:last-child input{
+	margin-top: 15px;
+}
+.mini-car table tr td:last-child input:focus{
+	outline: none;
+}
+.mini-car table tr:nth-child(n+2) span i{
+	font-size: 19px;
+	color: #D4D4D4;
+	cursor: pointer;
+	opacity: 1;
+	margin-left: 15px;
+}
+.mini-car table tr:nth-child(n+2)>td:last-child{
+	width: 140px;
+}
+.mini-car table tr:nth-child(n+2) span.active i{
+	opacity: 1;
+	transition: 1.5s;
+}
+.mini-car .car-item{
+	min-height: 280px;
+	max-height: 280px;
+	overflow-y: scroll;	
+}
+.mini-car .car-btn{
+	display: flex;
+	position: absolute;
+	right: 50px;
+}
+.mini-car .carf-cau-price,.mini-car .car-now-buy{
+	background: red;
+	display: block;
+	width: 150px;
+	height: 40px;
+	padding: 11px 0 9px;
+	text-align: center;
+	color: white;
+	margin-right: 30px;
+	cursor: pointer;	
+}
+.mini-car .car-now-buy{
+	background: #412F2F;
+	margin-right: 0;
+}
+.mini-car .car-now-buy a{
+	color: #FFFFFF;
+}
+.mini-car .car-now-buy a:hover{
+	color: white;
+}
+.mini-car .car-now-buy:hover{
+	color: white;
+	background: #0000FF;
+}
+
+
 /*head-bottom*/
 .head-bottom .categories-menu {
 	position: relative;
@@ -325,21 +405,24 @@ a:focus {
 	color: blue;
 }
 
-.head-bottom.stick{
+.head-bottom.stick {
 	position: fixed;
 	z-index: 9;
 	width: 100%;
 	top: 0;
-	background-color: rgb(255,255,255,.9);
+	background-color: rgb(255, 255, 255, .9);
 	padding-top: 6px;
 	animation: fadeInDown .5s infinite;
-	animation-iteration-count: 1;/*出现效果不重复*/
+	animation-iteration-count: 1;
+	/*出现效果不重复*/
 }
-@keyframes fadeInDown{
-	from{
-		top:-66px;
+
+@keyframes fadeInDown {
+	from {
+		top: -66px;
 	}
-	to{
+
+	to {
 		top: 0;
 	}
 }
@@ -378,7 +461,7 @@ a:focus {
 	height: 500px;
 	opacity: 1;
 	transition: all .5s ease-in-out;
-}	
+}
 
 /* .slider-area .slider-one {
 	background-image: url(../img/slider1.jpg);
@@ -501,10 +584,12 @@ a:focus {
 	left: 0;
 	right: 0;
 }
+
 .owl-carousel .owl-nav.disabled {
 	display: block;
 }
-.owl-carousel .owl-nav div{
+
+.owl-carousel .owl-nav div {
 	position: absolute;
 	top: -66px;
 	right: 50px;
@@ -517,24 +602,29 @@ a:focus {
 	line-height: 25px;
 	transition: .3s;
 }
-.owl-carousel .owl-nav div.owl-next{
+
+.owl-carousel .owl-nav div.owl-next {
 	right: 14px;
 }
-.owl-carousel .owl-nav div:hover{
+
+.owl-carousel .owl-nav div:hover {
 	background: #0000FF;
 	border: none;
 	color: #FFFFFF;
 }
+
 .owl-carousel .hot-product-banner-content {
 	position: absolute;
 	top: 0;
 	left: 0;
 	padding: 30px 20px;
 }
-.owl-carousel .hot-product-banner-content h3{
+
+.owl-carousel .hot-product-banner-content h3 {
 	font-size: 20px;
 	color: #444444;
 }
+
 /* .ibox {
 	margin-left: 1000px;
 	display: inline-block;
@@ -679,28 +769,33 @@ a:focus {
 } */
 
 /*新品上线*/
-.owl-stage .owl-item>.owl-item{
+.owl-stage .owl-item>.owl-item {
 	border: 1px solid #DDDDDD;
 	padding: 10px;
 }
-.new-product-banner .new-product-banner-content .product-ratting ul li.fa{
+
+.new-product-banner .new-product-banner-content .product-ratting ul li.fa {
 	color: #0000FF;
 }
-.new-product-banner .new-product-banner-content .product-name{
+
+.new-product-banner .new-product-banner-content .product-name {
 	color: #444444;
 	font-size: 15px;
 	font-weight: 400;
 }
-.new-product-banner .new-product-banner-content .product-price{
+
+.new-product-banner .new-product-banner-content .product-price {
 	margin-bottom: 6px;
 	font-size: 18px;
 	font-weight: 500;
 	color: red;
 }
-.new-product-banner .new-product-banner-content .product-action{
+
+.new-product-banner .new-product-banner-content .product-action {
 	margin-left: 70px;
 }
-.new-product-banner .new-product-banner-content .product-car{
+
+.new-product-banner .new-product-banner-content .product-car {
 	background: #F4F4F4;
 	color: #444444;
 	font-size: 14px;
@@ -710,46 +805,55 @@ a:focus {
 	border-radius: 20px;
 	cursor: pointer;
 }
-.new-product-banner .new-product-banner-content .product-car:hover{
+
+.new-product-banner .new-product-banner-content .product-car:hover {
 	background: #0000FF;
 	color: #FFFFFF;
 }
 
 /*modal*/
-.modal-header{
+.modal-header {
 	border: none;
 }
-.modal-header button:focus{
+
+.modal-header button:focus {
 	outline: none;
 }
-.modal-dialog{
+
+.modal-dialog {
 	min-width: 870px;
 }
-.modal-right .modal-right-title h3{
+
+.modal-right .modal-right-title h3 {
 	font-size: 16px;
 	font-weight: 700;
 	color: #444444;
 	margin-bottom: 10px;
 }
-.modal-right .modal-right-price span{
+
+.modal-right .modal-right-price span {
 	font-weight: 600;
 	color: red;
 	font-size: 17px;
 }
-.modal-right .modal-right-content p{
+
+.modal-right .modal-right-content p {
 	line-height: 24px;
 	font-size: 15px;
 }
-.modal-right .modal-right-size{
+
+.modal-right .modal-right-size {
 	margin-bottom: 20px;
 }
-.modal-right .modal-right-size h2{
+
+.modal-right .modal-right-size h2 {
 	font-size: 16px;
 	color: #222222;
 	font-weight: 700;
 	margin-bottom: 16px;
 }
-.modal-right .modal-right-size ul li{
+
+.modal-right .modal-right-size ul li {
 	display: inline-block;
 	margin-right: 3px;
 	border: 1px solid #DDDDDD;
@@ -763,15 +867,18 @@ a:focus {
 	font-size: 16px;
 	cursor: pointer;
 }
-.modal-right .modal-right-size ul li.active{
+
+.modal-right .modal-right-size ul li.active {
 	background: #0000FF;
 	color: #FFFFFF;
 	border-color: #0000FF;
 }
-.modal-right .modal-right-add-car{
+
+.modal-right .modal-right-add-car {
 	margin-bottom: 30px;
 }
-.modal-right .modal-right-add-car input{
+
+.modal-right .modal-right-add-car input {
 	width: 80px;
 	height: 40px;
 	border: 1px solid #DDDDDD;
@@ -781,7 +888,8 @@ a:focus {
 	outline: none;
 	border-radius: 5px;
 }
-.modal-right .modal-right-add-car button{
+
+.modal-right .modal-right-add-car button {
 	border: 1px solid #DDDDDD;
 	margin-left: 10px;
 	font-size: 12px;
@@ -790,33 +898,39 @@ a:focus {
 	color: #FFFFFF;
 	border-radius: 5px;
 	outline: none;
-	transition: .3s;	
+	transition: .3s;
 }
-.modal-right .modal-right-add-car button:hover{
+
+.modal-right .modal-right-add-car button:hover {
 	background: #0000FF;
 	color: #FFFFFF;
 	border-color: #0000FF;
 }
-.modal-right .modal-right-description p{
+
+.modal-right .modal-right-description p {
 	line-height: 24px;
 	font-size: 15px;
 	color: #666666;
 }
-.modal-left .modal-left-lagger-detail{
+
+.modal-left .modal-left-lagger-detail {
 	text-align: center;
 	border: 1px solid #DDDDDD;
 	margin-bottom: 10px;
 	padding: 15px;
 }
-.modal-left .modal-left-lagger-detail img{
+
+.modal-left .modal-left-lagger-detail img {
 	max-width: 100%;
 }
-.modal-left .modal-left-tab-img{
+
+.modal-left .modal-left-tab-img {
 	display: inline-block;
 	border: 1px solid #DDDDDD;
 	cursor: pointer;
 }
-.modal-left .modal-left-tab-img img{
+
+.modal-left .modal-left-tab-img img {
 	width: 105px;
 }
 

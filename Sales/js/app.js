@@ -8,6 +8,7 @@
 			this.cos();
 			this.hotpro();
 			this.addcar();
+			this.cszie();
 			this.cpic();
 		},
 		clickAccount: function() {
@@ -186,6 +187,19 @@
 				 })(cars[i]);
 			 }
 		},
+		cszie:function(){
+			let lis = document.querySelectorAll(".modal-right-size ul>li");
+			let preObj=null;
+			for(var i=0;i<lis.length;i++){
+				(function(that){
+					that.onclick=function(){
+						preObj&&(preObj.classList.remove("active"));
+						that.classList.add("active");
+						preObj=that;
+					}
+				})(lis[i]);
+			}
+		},
 		cpic:function(){
 			let imgDit={
 				'img/cart5.jpg':'img/product44.jpg',
@@ -200,6 +214,37 @@
 						document.querySelector('.modal-left-lagger-detail img').src=imgDit[src];
 					}
 				})(imgs[i]);
+			}
+		},
+		clicksc:function(){
+			documrn.querySelectorAll('.shop-car').onclick=function(event){
+				let minicar = document.querySelector('.main-car');
+				minicar.onclick=function(){
+					event.stopPropagation();
+				}
+				if(minicar.className=='mini-car'){
+					minicar.classList.add('open');
+				}else{
+					minicar.classList.remove('open');
+				}
+			}
+			//delete
+			
+			let trs = document.querySelectorAll('.mini-car table tr:nth-child(n+2)');
+			for(var i=0;i,trs.length;i++){
+				(function(that){
+					let span = that.querySelector('span');
+					that.addEventListener('mouseover',function(){
+						span.classList.add('active');
+					});
+					that.addEventListener('mouseout',function(){
+						span.classList.remove('active');
+					});
+					span.onclick=function(){
+						event.stopPropagation();
+						that.remove();
+					}
+				})(trs[i]);
 			}
 		},
 		
