@@ -10,6 +10,7 @@
 			this.addcar();
 			this.cszie();
 			this.cpic();
+			this.clicksc();
 		},
 		clickAccount: function() {
 			document.querySelector('.account').onclick = function() {
@@ -217,9 +218,9 @@
 			}
 		},
 		clicksc:function(){
-			documrn.querySelectorAll('.shop-car').onclick=function(event){
-				let minicar = document.querySelector('.main-car');
-				minicar.onclick=function(){
+			document.querySelector('.shop-car').onclick=function(event){
+				let minicar = document.querySelector('.mini-car');
+				minicar.onclick=function(event){
 					event.stopPropagation();
 				}
 				if(minicar.className=='mini-car'){
@@ -231,7 +232,7 @@
 			//delete
 			
 			let trs = document.querySelectorAll('.mini-car table tr:nth-child(n+2)');
-			for(var i=0;i,trs.length;i++){
+			for(var i=0;i<trs.length;i++){
 				(function(that){
 					let span = that.querySelector('span');
 					that.addEventListener('mouseover',function(){
@@ -240,7 +241,7 @@
 					that.addEventListener('mouseout',function(){
 						span.classList.remove('active');
 					});
-					span.onclick=function(){
+					span.onclick=function(event){
 						event.stopPropagation();
 						that.remove();
 					}

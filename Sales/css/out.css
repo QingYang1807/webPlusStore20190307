@@ -158,10 +158,10 @@ a:focus {
 	padding: 25px;
 	height: 360px;
 	transform-origin: 0 0 0;
-	transform: scaleY(1);
+	transform: scaleY(0);
 	transition: .4s;
 }
-.mini-car .open{
+.mini-car.open{
 	transform: scaleY(1);
 }
 .mini-car table img{
