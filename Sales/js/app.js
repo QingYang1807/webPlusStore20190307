@@ -8,6 +8,7 @@
 			this.cos();
 			this.hotpro();
 			this.addcar();
+			this.cpic();
 		},
 		clickAccount: function() {
 			document.querySelector('.account').onclick = function() {
@@ -184,6 +185,22 @@
 					 }
 				 })(cars[i]);
 			 }
+		},
+		cpic:function(){
+			let imgDit={
+				'img/cart5.jpg':'img/product44.jpg',
+				'img/cart6.jpg':'img/product45.jpg',
+				'img/cart7.jpg':'img/product46.jpg',
+			}
+			let imgs=document.querySelectorAll(".modal-left-tab-img");
+			for(var i=0;i<imgs.length;i++){
+				(function(that){
+					that.onclick=function(){
+						let src = that.querySelector("img").getAttribute("src");
+						document.querySelector('.modal-left-lagger-detail img').src=imgDit[src];
+					}
+				})(imgs[i]);
+			}
 		},
 		
 	}
