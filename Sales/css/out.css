@@ -565,7 +565,7 @@ a:focus {
 
 
 /*新品上线*/
-.new-product {
+/* .new-product {
 	margin-bottom: 20px;
 }
 
@@ -581,8 +581,6 @@ a:focus {
 	padding: 0 0 15px;
 	margin-bottom: 0;
 	border-bottom: #6e6eea 2px solid;
-	/* width: 80px; */
-	/* border: dashed; */
 	display: inline-block;
 }
 
@@ -615,18 +613,15 @@ a:focus {
 
 .new-product .new-product-banner .owl-item {
 	display: inline-block;
-	/*2019-3-20 16:51:00 modify*/
 	border: 2px solid #F4F4F4;
 }
 
 .new-product .new-product-banner .owl-item img {
 	width: 270px;
-	/* border: 5px red solid; */
 }
 
 .new-product-banner-content{
 	height:200px;
-	/* border: double; */
 }
 .new-product-banner-content h4{
 	font-size: 18px;
@@ -650,39 +645,181 @@ a:focus {
 	position: relative;
 	left: 55px;
 	background: #F4F4F4;
-}
+} */
 
 /*五角星*/
-.owl-item .cleanfloat::after {
+/* .owl-item .cleanfloat::after {
 	display: block;
 	clear: both;
 	content: "";
 	visibility: hidden;
 	height: 0;
-}
+} */
 
 /*清浮动*/
-.owl-item ul li {
+/* .owl-item ul li {
 	list-style: none;
 	float: left;
 	font-size: 30px;
 	margin: 5px;
-	/* color: #ccc; */
 	cursor: pointer;
-}
+} */
 
 /*五角星样式*/
-.owl-item .hs,.cs {
+/* .owl-item .hs,.cs {
 	color: #2971F5;
-}
+} */
 
 /*五角星点击后样式*/
 
-.new-product-banner a:hover{
+/* .new-product-banner a:hover{
 	cursor: pointer;
 	background: #2971F5;
 	color: #FFFFFF;
+} */
+
+/*新品上线*/
+.owl-stage .owl-item>.owl-item{
+	border: 1px solid #DDDDDD;
+	padding: 10px;
 }
+.new-product-banner .new-product-banner-content .product-ratting ul li.fa{
+	color: #0000FF;
+}
+.new-product-banner .new-product-banner-content .product-name{
+	color: #444444;
+	font-size: 15px;
+	font-weight: 400;
+}
+.new-product-banner .new-product-banner-content .product-price{
+	margin-bottom: 6px;
+	font-size: 18px;
+	font-weight: 500;
+	color: red;
+}
+.new-product-banner .new-product-banner-content .product-action{
+	margin-left: 70px;
+}
+.new-product-banner .new-product-banner-content .product-car{
+	background: #F4F4F4;
+	color: #444444;
+	font-size: 14px;
+	width: 124px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.new-product-banner .new-product-banner-content .product-car:hover{
+	background: #0000FF;
+	color: #FFFFFF;
+}
+
+/*modal*/
+.modal-header{
+	border: none;
+}
+.modal-header button:focus{
+	outline: none;
+}
+.modal-dialog{
+	min-width: 870px;
+}
+.modal-right .modal-right-title h3{
+	font-size: 16px;
+	font-weight: 700;
+	color: #444444;
+	margin-bottom: 10px;
+}
+.modal-right .modal-right-price span{
+	font-weight: 600;
+	color: red;
+	font-size: 17px;
+}
+.modal-right .modal-right-content p{
+	line-height: 24px;
+	font-size: 15px;
+}
+.modal-right .modal-right-size{
+	margin-bottom: 20px;
+}
+.modal-right .modal-right-size h2{
+	font-size: 16px;
+	color: #222222;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+.modal-right .modal-right-size ul li{
+	display: inline-block;
+	margin-right: 3px;
+	border: 1px solid #DDDDDD;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 38px;
+	color: #222222;
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+}
+.modal-right .modal-right-size ul li.active{
+	background: #0000FF;
+	color: #FFFFFF;
+	border-color: #0000FF;
+}
+.modal-right .modal-right-add-car{
+	margin-bottom: 30px;
+}
+.modal-right .modal-right-add-car input{
+	width: 80px;
+	height: 40px;
+	border: 1px solid #DDDDDD;
+	background: none;
+	padding: 0 16px;
+	font-weight: 700;
+	outline: none;
+	border-radius: 5px;
+}
+.modal-right .modal-right-add-car button{
+	border: 1px solid #DDDDDD;
+	margin-left: 10px;
+	font-size: 12px;
+	padding: 10px 15px;
+	background: #444444;
+	color: #FFFFFF;
+	border-radius: 5px;
+	outline: none;
+	transition: .3s;	
+}
+.modal-right .modal-right-add-car button:hover{
+	background: #0000FF;
+	color: #FFFFFF;
+	border-color: #0000FF;
+}
+.modal-right .modal-right-description p{
+	line-height: 24px;
+	font-size: 15px;
+	color: #666666;
+}
+.modal-left .modal-left-lagger-detail{
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 10px;
+	padding: 15px;
+}
+.modal-left .modal-left-lagger-detail img{
+	max-width: 100%;
+}
+.modal-left .modal-left-tab-img{
+	display: inline-block;
+	border: 1px solid #DDDDDD;
+	cursor: pointer;
+}
+.modal-left .modal-left-tab-img img{
+	width: 105px;
+}
+
 /*联系我们*/
 .contact-area {
 	background-color: #F7F7F7;

@@ -7,6 +7,7 @@
 			this.cm();
 			this.cos();
 			this.hotpro();
+			this.addcar();
 		},
 		clickAccount: function() {
 			document.querySelector('.account').onclick = function() {
@@ -150,7 +151,7 @@
 				}
 			});
 			$('.new-product-banner').owlCarousel({
-				autoplay:!0,
+				autoplay:!1,
 				loop:!0,
 				nav:!0,
 				autoplayTimeout:2000,
@@ -173,6 +174,16 @@
 					}
 				}
 			});
+		},
+		addcar:function(){
+			let cars = document.querySelectorAll('.product-car');
+			 for(var i=0;i<cars.length;i++){
+				 (function(obj){
+					 obj.onclick=function(){
+						 $('.modal').modal("show")
+					 }
+				 })(cars[i]);
+			 }
 		},
 		
 	}
