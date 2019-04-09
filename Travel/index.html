@@ -4,23 +4,11 @@
 		<meta charset="utf-8" />
 		<title>导航页</title>
 		<script src="js/include.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/out.css"/>
 	</head>
 	<body>
-		<header id="header">
-			<div class="center">
-				<h1 class="logo"></h1>
-				<nav class="link">
-					<ul>
-						<li class="active"><a href="index.html">首页</a></li>
-						<li><a href="information.html">旅游资讯</a></li>
-						<li><a href="ticket.html">机票订购</a></li>
-						<li><a href="scenery.html">风景欣赏</a></li>
-						<li><a href="about.html">公司简介</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
+		<include src="header.html"></include>
+		
 		<div id="search">
 			<div class="center">
 				<input type="text" class="search" placeholder="请输入旅游景点或城市">
@@ -38,8 +26,8 @@
 				<figcaption>
 					<strong>&lt;曼谷-芭提雅6日游&gt</strong> 包团特惠，超丰富景点，升级1晚国五，无自费，更赠送600元/成人自费券
 					<div class="info">
-						<em class="sat">满意度 77%</em>
 						<span class="price">￥ <strong>2864</strong>起</span>
+						<em class="sat">满意度 77%</em>
 					</div>
 					<div class="type">国内长线</div>
 				</figcaption>
@@ -140,14 +128,8 @@
 					<div class="type">国内短线</div>
 				</figcaption>
 			</figure>
-
-
-
 		</div>
-
-
-
-
+		
 		<include src="footer.html"></include>
 	</body>
 </html>
