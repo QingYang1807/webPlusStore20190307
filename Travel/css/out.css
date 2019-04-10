@@ -798,16 +798,68 @@ article {
 	color: #666666;
 }
 
+/*风景欣赏*/
+#container .list.scenery section h2{
+	font-size: 28px;
+	color: #666666;
+	text-align: left;
+	padding: 10px 0;
+	border-bottom: 1px dashed #999999;
+	width: 940px;
+	margin-bottom: 20px;
+}
+#container .list.scenery figure{
+	display: inline-block;
+	border: 1px solid #DEDEDE;
+	padding: 5px 5px;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+#container .list.scenery figure:nth-of-type(odd){
+	margin-right: 20px;
+}
+#container .list.scenery figure figcaption{
+	color: #666666;
+	font-size: 20px;
+	text-align: center;
+}
+.list.scenery .more{
+	width: 137px;
+    height: 50px;
+    background-color: #FAFAFA;
+    line-height: 50px;
+    padding-left: 45px;
+    border: #CCCCCC 1px solid;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-size: 20px;
+	position: relative;
+	left: -200px;
+	cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
+/*关于我们*/
+#container .list.about{
+	color: #666666;
+}
+#container .list.about section h2{
+	font-size: 28px;
+	text-align: left;
+	padding: 10px 0;
+	border-bottom: 1px dashed #999999;
+	width: 940px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+#container .list.about section p{
+	font-size: 22px;
+	line-height: 50px;
+}
+#container .list.about address ul li{
+	font-size: 22px;
+	line-height: 50px;
+	font-style: normal;
+}
 
 /*底部友情链接和版权栏*/
 #footer {
